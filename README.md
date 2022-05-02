@@ -2,9 +2,9 @@
 ---
 ## Espacio virtual acompañando proyecto del eje esapcio (segundo cuetrimetres del 2021) en la maestría en artes electrónicas de la UNTREF
 
-esta web funcion a partir del framework A-frame y el cdn y hosting de glitch.me
+Está web funciona desde el framework [A-frame](https://aframe.io) y el cdn y hosting de glitch.me
 
-### desarrollo web, fotogrametrias y texturizado : Santiago T. Fernandez
+### Desarrollo web, fotogrametrias y texturizado : Santiago T. Fernandez G.
 ### Sonido: Pau Singla Lezcano  
 
 #### Proyecto deployado en glitch.me
