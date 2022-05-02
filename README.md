@@ -2,7 +2,8 @@
 ---
 ## Espacio virtual acompañando proyecto del eje esapcio (segundo cuetrimetres del 2021) en la maestría en artes electrónicas de la UNTREF
 
-Está web funciona desde el framework [A-frame](https://aframe.io) y el cdn y hosting de glitch.me y cuenta con fotogrametrias de la [casa belgrado](https://espaciobelgrado.wixsite.com/casabelgrado)
+Está web funciona desde el framework [A-frame](https://aframe.io) y el cdn y hosting de glitch.me  
+A su vez las los objetos fotogrametrizados provienen de la [casa belgrado](https://espaciobelgrado.wixsite.com/casabelgrado)
 
 ### Desarrollo web, fotogrametrias y texturizado : Santiago T. Fernandez G.
 ### Sonido: Pau Singla Lezcano  
