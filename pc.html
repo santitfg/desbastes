@@ -1,0 +1,126 @@
+!DOCTYPE html
+
+head
+  titleA-Frame mobile controls  Fancy Apartment by 3diotitle
+  meta http-equiv=Content-Type content=texthtml; charset=UTF-8 
+  script src=httpsaframe.ioreleases0.7.1aframe.min.jsscript
+  script src=httpsdist.3d.io3dio-js1.1.x3dio.min.jsscript
+  script src=httpsrawgit.comfeissaframe-environment-componentmasterdistaframe-environment-component.min.jsscript
+  script src=httpsfasility.comcomponentstwoway-motiontwoway-motion.jsscript
+  script src=httpsfasility.comcomponentstilt-turntilt-turn.jsscript
+  script src=httpsfasility.comcomponentsalicealice.jsscript
+
+  script src=httpsunpkg.comaframe-websurfaces@1.4.0distaframe-websurfaces.umd.jsscript
+
+  meta name=viewport content=width=device-width,initial-scale=1 
+  meta name=mobile-web-app-capable content=yes 
+  meta name=theme-color content=black 
+head
+
+body
+  script
+    AFRAME.registerComponent(startup, {
+      init function() {
+        startup();
+      }
+    });
+
+    startup = function() {
+      console.log(A-Frame is ready.);
+      
+            document.querySelector([camera]).setAttribute(position, {
+                x -13.885415634798132, 
+                y 1.6, 
+                z -20.730999896801084
+            });
+            document.querySelector([camera]).setAttribute(rotation, {
+                x 9.281916281119349, 
+                y 141.6351669563396, 
+                z 0
+            });
+            
+    };
+  script
+
+  a-scene vr-mode-ui=enabled false
+a-sound src=src url(httpscdn.glitch.meeea49a32-a95a-4851-867e-312bfd91eafb%2FTexturas_De_Desbastes.mp3v=1635895450098) autoplay=true position=0 2 5 sound=volume25a-sound
+    
+    !--         a-entity id=environment position=0 -.714 0 environment=fog 10; groundTexture walkernoise; groundColor #2d4519; groundColor2 #435d31;a-entity --
+
+    !-- a-entity id=environment position=0 -0.714 0 environment=playArea0.6;groundYScale6.1499999999999995;groundTexturewalkernoise;dressingColor#ee4917;dressingScale6.88;skyTypeatmosphere;lightingnone;groundColor2#b5aeaa;groundColor#4c4e4b;presetstarry;fog10a-entity class=environment position=0 50 0 light=intensity0.08913300229539221;groundColor#4c4e4b;color#c3c3e5;typehemisphere visible=falsea-entitya-entity class=environment position=0 -0.01 -0.46 light=shadowCameraLeft-10;shadowCameraBottom-10;shadowCameraRight10;shadowCameraTop10;intensity0.08913300229539221 visible=falsea-entitya-entity rotation=-90 0 0 class=environmentGround environment scale=1 1 6.1499999999999995 shadow=castfalse;receivefalsea-entitya-entity class=environmentDressing environment visible=falsea-entitya-sky radius=200 theta-length=110 class=environment geometry= material=sunPosition0 -0.021733995409215574 -0.9997637888239164;shaderskyshader;npotfalse;color#fffa-skya-entity id=starsa-entitya-entity --
+    a-entity
+      id=environment
+      position=0 -6.292 0
+      environment=playArea0.6;groundYScale6.1499999999999995;groundTexturewalkernoise;dressingColor#ee4917;dressingScale6.88;skyTypeatmosphere;lightingnone;groundColor2#b5aeaa;groundColor#4c4e4b;presetstarry;fog10
+      a-entity
+        class=environment
+        position=0 50 0
+        light=intensity0.08913300229539221;groundColor#4c4e4b;color#c3c3e5;typehemisphere
+        visible=false
+      a-entity
+      a-entity
+        class=environment
+        position=0 -0.01 -0.46
+        light=shadowCameraLeft-10;shadowCameraBottom-10;shadowCameraRight10;shadowCameraTop10;intensity0.08913300229539221
+        visible=false
+      a-entity
+      a-entity
+        rotation=-90 0 0
+        class=environmentGround environment
+        scale=1 1 6.1499999999999995
+        shadow=castfalse;receivefalse
+      a-entity
+      a-entity
+        class=environmentDressing environment
+        visible=false
+      a-entity
+      a-sky
+        radius=200
+        theta-length=110
+        class=environment
+        geometry=
+        material=sunPosition0 -0.021733995409215574 -0.9997637888239164;shaderskyshader;npotfalse;color#fff
+      a-sky
+      a-entity id=starsa-entity
+    a-entity
+
+    httpscdn.glitch.mef16be160-6f46-45bb-accd-b4d2029705d9%2Fcemento.gltfv=1639160585911
+    a-entity position=-7.838 10.473 -4.7 rotation=-1.81 -93.38 270 scale=10 10 10 gltf-model=httpscdn.glitch.mef16be160-6f46-45bb-accd-b4d2029705d9%2Fyeso.gltfv=1639160564659a-entity
+!-- a-entity position=-7.838 10.473 -4.7 rotation=-1.81 -93.38 270 scale=10 10 10 obj-model=mtlhttpscdn.glitch.mef16be160-6f46-45bb-accd-b4d2029705d9%2FtexturedMesh%20-%20copia.mtlv=1639151278440;objhttpscdn.glitch.mef16be160-6f46-45bb-accd-b4d2029705d9%2FtexturedMesh.objv=1639139759229a-entity --
+!--     a-entity position=18.58 6.312 -11.638 rotation=-17.42 120 -6.73 scale=10 10 10 gltf-model=httpscdn.glitch.mef16be160-6f46-45bb-accd-b4d2029705d9%2Fcemento.gltfv=1639160585911a-entity --
+a-entity position=18.58 6.312 -11.638 rotation=-17.42 120 -6.73 scale=10 10 10 gltf-model=httpscdn.glitch.mef16be160-6f46-45bb-accd-b4d2029705d9%2Fcemento.gltfv=1639160585911a-entity
+!--     a-entity position=18.58 6.312 -11.638 rotation=-17.42 120 -6.73 scale=10 10 10 obj-model=objhttpscdn.glitch.mef16be160-6f46-45bb-accd-b4d2029705d9%2Fcemento.objv=1639153776311;mtlhttpscdn.glitch.mef16be160-6f46-45bb-accd-b4d2029705d9%2Fcemento.mtlv=1639156133946a-entity --
+    
+a-entity position=-9.916 1.07 55.068 rotation=180 180 0 scale=10 10 10 gltf-model=httpscdn.glitch.mef16be160-6f46-45bb-accd-b4d2029705d9%2Fchimenea.gltfv=1639230922831a-entity
+
+a-entity position=56.416 5.327 52.608 rotation=0.48 45 10 scale=10 10 10 gltf-model=httpscdn.glitch.mef16be160-6f46-45bb-accd-b4d2029705d9%2Fmadera.gltfv=1639230954300a-entity
+    
+    a-entity
+      position=-5.07 15.172 -7.137
+      rotation=0 -69.6 0
+      light=decay4.98;intensity1.24;typepoint
+    a-entity
+
+    a-entity
+      id=cam
+      camera
+      alice
+      tilt-turn
+      twoway-motion=nonMobileLoad true; chatty false;
+      position=0 1.6 0
+      wasd-controls
+      look-controls
+    
+      a-cursor scale=2 2 2 color=white opacity=0.3 a-cursor
+    a-entity
+
+    a-entity
+      position=0 50 0
+      light=groundColor#2d4519;intensity0.572;typehemisphere;color#CEE4F0
+    a-entity
+    a-entity
+      position=-0.11 1 0.33
+      light=shadowCameraLeft-10;shadowCameraBottom-10;shadowCameraRight10;shadowCameraTop10;intensity0.2722448147213711
+    a-entity
+  a-scene
+body

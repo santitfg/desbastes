@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<head>
+  <title>A-Frame mobile controls | Fancy Apartment by 3dio</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+  <script src="https://dist.3d.io/3dio-js/1.1.x/3dio.min.js"></script>
+  <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+  <script src="https://fasility.com/components/twoway-motion/twoway-motion.js"></script>
+  <script src="https://fasility.com/components/tilt-turn/tilt-turn.js"></script>
+  <script src="https://fasility.com/components/alice/alice.js"></script>
+
+  <script src="https://unpkg.com/aframe-websurfaces@1.4.0/dist/aframe-websurfaces.umd.js"></script>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="black" />
+</head>
+
+<body>
+  <script>
+    AFRAME.registerComponent("startup", {
+      init: function() {
+        startup();
+      }
+    });
+
+    startup = function() {
+      console.log("A-Frame is ready.");
+      /*
+            document.querySelector("[camera]").setAttribute("position", {
+                x: -13.885415634798132, 
+                y: 1.6, 
+                z: -20.730999896801084
+            });
+            document.querySelector("[camera]").setAttribute("rotation", {
+                x: 9.281916281119349, 
+                y: 141.6351669563396, 
+                z: 0
+            });
+            */
+    };
+  </script>
+
+  <a-scene vr-mode-ui="enabled: false">
+<a-sound src="src: url(https://cdn.glitch.me/eea49a32-a95a-4851-867e-312bfd91eafb%2FTexturas_De_Desbastes.mp3?v=1635895450098)" autoplay="true" position="0 2 5" sound="volume:25"></a-sound>
+    
+    <!--         <a-entity id="environment" position="0 -.714 0" environment="fog: 10; groundTexture: walkernoise; groundColor: #2d4519; groundColor2: #435d31;"></a-entity> -->
+
+    <!-- <a-entity id="environment" position="0 -0.714 0" environment="playArea:0.6;groundYScale:6.1499999999999995;groundTexture:walkernoise;dressingColor:#ee4917;dressingScale:6.88;skyType:atmosphere;lighting:none;groundColor2:#b5aeaa;groundColor:#4c4e4b;preset:starry;fog:10"><a-entity class="environment" position="0 50 0" light="intensity:0.08913300229539221;groundColor:#4c4e4b;color:#c3c3e5;type:hemisphere" visible="false"></a-entity><a-entity class="environment" position="0 -0.01 -0.46" light="shadowCameraLeft:-10;shadowCameraBottom:-10;shadowCameraRight:10;shadowCameraTop:10;intensity:0.08913300229539221" visible="false"></a-entity><a-entity rotation="-90 0 0" class="environmentGround environment" scale="1 1 6.1499999999999995" shadow="cast:false;receive:false"></a-entity><a-entity class="environmentDressing environment" visible="false"></a-entity><a-sky radius="200" theta-length="110" class="environment" geometry="" material="sunPosition:0 -0.021733995409215574 -0.9997637888239164;shader:skyshader;npot:false;color:#fff"></a-sky><a-entity id="stars"></a-entity></a-entity> -->
+    <a-entity
+      id="environment"
+      position="0 -6.292 0"
+      environment="playArea:0.6;groundYScale:6.1499999999999995;groundTexture:walkernoise;dressingColor:#ee4917;dressingScale:6.88;skyType:atmosphere;lighting:none;groundColor2:#b5aeaa;groundColor:#4c4e4b;preset:starry;fog:10"
+      ><a-entity
+        class="environment"
+        position="0 50 0"
+        light="intensity:0.08913300229539221;groundColor:#4c4e4b;color:#c3c3e5;type:hemisphere"
+        visible="false"
+      ></a-entity
+      ><a-entity
+        class="environment"
+        position="0 -0.01 -0.46"
+        light="shadowCameraLeft:-10;shadowCameraBottom:-10;shadowCameraRight:10;shadowCameraTop:10;intensity:0.08913300229539221"
+        visible="false"
+      ></a-entity
+      ><a-entity
+        rotation="-90 0 0"
+        class="environmentGround environment"
+        scale="1 1 6.1499999999999995"
+        shadow="cast:false;receive:false"
+      ></a-entity
+      ><a-entity
+        class="environmentDressing environment"
+        visible="false"
+      ></a-entity
+      ><a-sky
+        radius="200"
+        theta-length="110"
+        class="environment"
+        geometry=""
+        material="sunPosition:0 -0.021733995409215574 -0.9997637888239164;shader:skyshader;npot:false;color:#fff"
+      ></a-sky
+      ><a-entity id="stars"></a-entity
+    ></a-entity>
+
+    https://cdn.glitch.me/f16be160-6f46-45bb-accd-b4d2029705d9%2Fcemento.gltf?v=1639160585911
+    <a-entity position="-7.838 10.473 -4.7" rotation="-1.81 -93.38 270" scale="10 10 10" gltf-model="https://cdn.glitch.me/f16be160-6f46-45bb-accd-b4d2029705d9%2Fyeso.gltf?v=1639160564659"></a-entity>
+<!-- <a-entity position="-7.838 10.473 -4.7" rotation="-1.81 -93.38 270" scale="10 10 10" obj-model="mtl:https://cdn.glitch.me/f16be160-6f46-45bb-accd-b4d2029705d9%2FtexturedMesh%20-%20copia.mtl?v=1639151278440;obj:https://cdn.glitch.me/f16be160-6f46-45bb-accd-b4d2029705d9%2FtexturedMesh.obj?v=1639139759229"></a-entity> -->
+<!--     <a-entity position="18.58 6.312 -11.638" rotation="-17.42 120 -6.73" scale="10 10 10" gltf-model="https://cdn.glitch.me/f16be160-6f46-45bb-accd-b4d2029705d9%2Fcemento.gltf?v=1639160585911"></a-entity> -->
+<a-entity position="18.58 6.312 -11.638" rotation="-17.42 120 -6.73" scale="10 10 10" gltf-model="https://cdn.glitch.me/f16be160-6f46-45bb-accd-b4d2029705d9%2Fcemento.gltf?v=1639160585911"></a-entity>
+<!--     <a-entity position="18.58 6.312 -11.638" rotation="-17.42 120 -6.73" scale="10 10 10" obj-model="obj:https://cdn.glitch.me/f16be160-6f46-45bb-accd-b4d2029705d9%2Fcemento.obj?v=1639153776311;mtl:https://cdn.glitch.me/f16be160-6f46-45bb-accd-b4d2029705d9%2Fcemento.mtl?v=1639156133946"></a-entity> -->
+    
+<!-- <a-entity position="-9.916 1.07 55.068" rotation="180 180 0" scale="10 10 10" gltf-model="https://cdn.glitch.me/f16be160-6f46-45bb-accd-b4d2029705d9%2Fchimenea.gltf?v=1639230922831"></a-entity> -->
+
+<!-- <a-entity position="56.416 5.327 52.608" rotation="0.48 45 10" scale="10 10 10" gltf-model="https://cdn.glitch.me/f16be160-6f46-45bb-accd-b4d2029705d9%2Fmadera.gltf?v=1639230954300"></a-entity> -->
+    
+    <a-entity
+      position="-5.07 15.172 -7.137"
+      rotation="0 -69.6 0"
+      light="decay:4.98;intensity:1.24;type:point"
+    ></a-entity>
+
+    <a-entity
+      id="cam"
+      camera
+      alice
+      tilt-turn
+      twoway-motion="nonMobileLoad: true; chatty: false;"
+      position="0 1.6 0"
+      wasd-controls
+      look-controls
+    >
+      <a-cursor scale="2 2 2" color="white" opacity="0.3"> </a-cursor>
+    </a-entity>
+
+    <a-entity
+      position="0 50 0"
+      light="groundColor:#2d4519;intensity:0.572;type:hemisphere;color:#CEE4F0"
+    ></a-entity>
+    <a-entity
+      position="-0.11 1 0.33"
+      light="shadowCameraLeft:-10;shadowCameraBottom:-10;shadowCameraRight:10;shadowCameraTop:10;intensity:0.2722448147213711"
+    ></a-entity>
+  </a-scene>
+</body>
